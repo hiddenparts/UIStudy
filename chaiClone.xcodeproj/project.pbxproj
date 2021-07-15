@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6F9F2E342699A69F003FA213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F2E332699A69F003FA213 /* AppDelegate.swift */; };
-		6F9F2E362699A69F003FA213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F2E352699A69F003FA213 /* SceneDelegate.swift */; };
-		6F9F2E382699A69F003FA213 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F2E372699A69F003FA213 /* ViewController.swift */; };
+		6F9F2E382699A69F003FA213 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F2E372699A69F003FA213 /* SignUpViewController.swift */; };
 		6F9F2E3B2699A69F003FA213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9F2E392699A69F003FA213 /* Main.storyboard */; };
 		6F9F2E3D2699A6A1003FA213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F9F2E3C2699A6A1003FA213 /* Assets.xcassets */; };
 		6F9F2E402699A6A1003FA213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9F2E3E2699A6A1003FA213 /* LaunchScreen.storyboard */; };
+		6F9F2E4D269F48FC003FA213 /* SignupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F2E4C269F48FC003FA213 /* SignupCell.swift */; };
+		6F9F2E50269F4CE4003FA213 /* UICollectionViewCell+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F2E4F269F4CE4003FA213 /* UICollectionViewCell+Extenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F9F2E302699A69F003FA213 /* chaiClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chaiClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9F2E332699A69F003FA213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F9F2E352699A69F003FA213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F9F2E372699A69F003FA213 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F9F2E372699A69F003FA213 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6F9F2E3A2699A69F003FA213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F9F2E3C2699A6A1003FA213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F9F2E3F2699A6A1003FA213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F9F2E412699A6A1003FA213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F9F2E4C269F48FC003FA213 /* SignupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCell.swift; sourceTree = "<group>"; };
+		6F9F2E4F269F4CE4003FA213 /* UICollectionViewCell+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extenstion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		6F9F2E322699A69F003FA213 /* chaiClone */ = {
 			isa = PBXGroup;
 			children = (
+				6F9F2E4E269F4C48003FA213 /* extenstion */,
+				6F9F2E482699A940003FA213 /* Sign */,
 				6F9F2E332699A69F003FA213 /* AppDelegate.swift */,
-				6F9F2E352699A69F003FA213 /* SceneDelegate.swift */,
-				6F9F2E372699A69F003FA213 /* ViewController.swift */,
 				6F9F2E392699A69F003FA213 /* Main.storyboard */,
 				6F9F2E3C2699A6A1003FA213 /* Assets.xcassets */,
 				6F9F2E3E2699A6A1003FA213 /* LaunchScreen.storyboard */,
 				6F9F2E412699A6A1003FA213 /* Info.plist */,
 			);
 			path = chaiClone;
+			sourceTree = "<group>";
+		};
+		6F9F2E482699A940003FA213 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				6F9F2E4B269F48BB003FA213 /* cell */,
+				6F9F2E372699A69F003FA213 /* SignUpViewController.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		6F9F2E4B269F48BB003FA213 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				6F9F2E4C269F48FC003FA213 /* SignupCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		6F9F2E4E269F4C48003FA213 /* extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				6F9F2E4F269F4CE4003FA213 /* UICollectionViewCell+Extenstion.swift */,
+			);
+			path = extenstion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F9F2E382699A69F003FA213 /* ViewController.swift in Sources */,
+				6F9F2E382699A69F003FA213 /* SignUpViewController.swift in Sources */,
+				6F9F2E50269F4CE4003FA213 /* UICollectionViewCell+Extenstion.swift in Sources */,
+				6F9F2E4D269F48FC003FA213 /* SignupCell.swift in Sources */,
 				6F9F2E342699A69F003FA213 /* AppDelegate.swift in Sources */,
-				6F9F2E362699A69F003FA213 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYE3H8UC38;
 				INFOPLIST_FILE = chaiClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DYE3H8UC38;
 				INFOPLIST_FILE = chaiClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
